@@ -7,11 +7,11 @@
     function simulateServerError() {
       setTimeout(function() {
         document.getElementById("error-message").style.display = "none";
-        document.getElementById("self-intro").style.display = "block";
+        document.getElementById("not-found").style.display = "block";
         setTimeout(function() {
           document.getElementById("self-intro").style.display = "none";
           document.getElementById("error-message").style.display = "block";
-        }, 60000);
+        }, 30000);
       }, 3000);
     }
   </script>
