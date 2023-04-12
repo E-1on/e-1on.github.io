@@ -7,9 +7,9 @@
     function simulateServerError() {
       setTimeout(function() {
         document.getElementById("error-message").style.display = "none";
-        document.getElementById("not-found").style.display = "block";
+        document.getElementById("self-intro").style.display = "block";
         setTimeout(function() {
-          document.getElementById("self-intro").style.display = "none";
+          document.getElementById("not-found").style.display = "none";
           document.getElementById("error-message").style.display = "block";
         }, 30000);
       }, 3000);
