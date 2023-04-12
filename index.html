@@ -1,64 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Hilarious Self-Intro</title>
-      <script>
+  <title>My Self-Introduce Page</title>
+  <script>
     // Function to simulate 500 error
     function simulateServerError() {
       setTimeout(function() {
         document.getElementById("error-message").style.display = "none";
         document.getElementById("self-intro").style.display = "block";
+        setTimeout(function() {
+          document.getElementById("self-intro").style.display = "none";
+          document.getElementById("error-message").style.display = "block";
+        }, 60000);
       }, 3000);
     }
   </script>
 </head>
 <body onload="simulateServerError()">
   <h1 id="error-message">500 Internal Server Error</h1>
-      <div id="self-intro" style="display: none;">
-
-    <header>
-        <h1>Hello, I'm the 200 OK-tastic Web Dev!</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">My Mad Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a web developer who's always on the "200 OK" mode, bringing websites to life with my coding wizardry! I have a knack for creating pixel-perfect designs and smooth user experiences that leave visitors in awe and hitting that refresh button for more.</p>
-    </section>
-    <section id="skills">
-        <h2>My Mad Skills</h2>
-        <ul>
-            <li>HTML: 101% mastered, it's in my DNA!</li>
-            <li>CSS: Styling like a boss, making websites look fly!</li>
-            <li>JavaScript: Spreading interactivity like a wildfire!</li>
-            <li>React: Building blazing fast UIs, it's my jam!</li>
-        </ul>
-    </section>
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>2015-2017: Chief CSS Ninja at WebMaster Co.</li>
-            <li>2018-2020: JavaScript Magician at CodeGenius Inc.</li>
-            <li>2021-Present: React Rockstar at WebWizards Ltd.</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you're ready to experience web development magic or just want to swap coding jokes, drop me a line using the info below!</p>
-        <ul>
-            <li>Email: magiccoder@example.com</li>
-            <li>Twitter: @codingwizard</li>
-        </ul>
-    </section>
-    <footer>
-        <p>© 2023 Web Dev Wizard. All rights cracked up!</p>
-    </footer>
-    </div>
+  <div id="self-intro" style="display: none;">
+    <h1>Hello, I'm [Your Name]!</h1>
+    <p>Welcome to my GitHub.io page. I'm a web developer with a passion for coding and creating innovative web solutions. With expertise in [Your Skills], I strive to make the internet a better place through my creative and functional web designs. Feel free to explore my projects and get in touch with me for collaboration opportunities!</p>
+  </div>
+  <h1 id="not-found" style="display: none;">404 Not Found</h1>
 </body>
 </html>
