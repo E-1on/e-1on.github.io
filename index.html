@@ -7,10 +7,10 @@
     function simulateServerError() {
       setTimeout(function() {
         document.getElementById("error-message").style.display = "none";
-        document.getElementById("self-intro").style.display = "block";
+        document.getElementById("not-found").style.display = "block";
         setTimeout(function() {
-          document.getElementById("not-found").style.display = "none";
-          document.getElementById("error-message").style.display = "block";
+          document.getElementById("self-intro").style.display = "none";
+          document.getElementById("error-message").style.display = "none";
         }, 30000);
       }, 3000);
     }
